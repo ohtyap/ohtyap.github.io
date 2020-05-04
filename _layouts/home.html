@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+<div class="{% if forloop.last == false %}border-b border-solid border-gray-300 {% endif %}mb-8">
+    <h4>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </h4>
+    <div class="italic mb-3 text-base">
+        {{ post.date | date: "%B %Y"}}
+    </div>
+    <div class="mb-4">
+        <div class="text-lg">
+            {{ post.description }}
+        </div>
+        <div>
+            <a class="text-base" href="{{ post.url }}">Read more...</a>
+        </div>
+    </div>
+    <div class="text-sm mb-4">
+        Categories: {% include categories.html categories=post.categories %}
+    </div>
+</div>
+{% endfor %}

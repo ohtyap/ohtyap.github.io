@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="mb-10 text-sm">
+    <a class="text-gray-900" href="/">Home</a> <span class="text-green-600">#</span> <a class="text-gray-900" href="{{ page.url }}">{{page.title}}</a>
+</div>
+<div class="text-sm">
+    {% include categories.html categories=page.categories %}
+</div>
+<h1>{{ page.title }}</h1>
+<p class="italic">{{ page.date | date: "%B %Y"}}</p>
+<div class="mb-10">
+    {{ content }}
+</div>
+
+

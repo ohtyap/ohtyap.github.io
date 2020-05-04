@@ -1,0 +1,15 @@
+defaults:  
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /blog/:year/:month/:title:output_ext
+
+exclude:  
+  - "*.config.js"
+  - "package*.json"
+  - "assets"
+  - "node_modules"
+
+timezone: Europe/Vienna
