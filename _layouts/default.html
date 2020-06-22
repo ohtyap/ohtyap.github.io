@@ -15,6 +15,15 @@
     <meta name="msapplication-TileColor" content="#555555">
     <meta name="msapplication-config" content="{{ site.data.manifest['favicon/browserconfig.xml'] }}">
     <meta name="theme-color" content="#ffffff">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170272834-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-170272834-1', { 'anonymize_ip': true });
+    </script>
+
 </head>
 <body class="font-sans antialiased text-gray-900 text-xl">
     <div class="bg-gray-100 shadow">
