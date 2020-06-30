@@ -11,5 +11,9 @@ exclude:
   - "package*.json"
   - "assets"
   - "node_modules"
+  - "CNAME"
 
 timezone: Europe/Vienna
+
+plugins:
+  - jekyll-sitemap
