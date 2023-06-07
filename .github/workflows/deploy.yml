@@ -32,6 +32,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - run: mkdir dist && cp -R favicon dist/ && cp -R img dist/ && cp index.html dist/ && cp main.css dist/
+      # Custom 404
+      - run: cp index.html dist/404.html
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
